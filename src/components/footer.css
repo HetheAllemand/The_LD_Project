@@ -1,0 +1,9 @@
+
+.footer {
+    background-color: rgb(0, 0, 0);
+}
+
+.footer label {
+    color: rgb(252, 252, 252);
+    text-decoration: underline;
+}
