@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.center-divider {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  font-size: medium;
+}
+
+.diyvideos{
+  
+  
+}

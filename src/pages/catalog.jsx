@@ -6,6 +6,7 @@ import './catalog.css';
 function Catalog() {
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
+    const [prodsToDisplay, setProdsToDisplay] = useState([]);
 
     useEffect(function(){
         console.log("component loaded");
@@ -15,29 +16,39 @@ function Catalog() {
     function loadCatalog() {
         let service = new DataService();
         let prods = service.getProducts();
-        console.log(prods);
         setProducts(prods);
+        setProdsToDisplay(prods);
 
-        let cats = ["Electric Range", "Wahing machines", "Bathroom", "Electric Range", "Kitchen", "Pluming", "Flooring"];
+        let cats = ["Electric Range", "Washing Machines", "Refrigerators"];
         setCategories(cats);
     }
 
-    function majicTest() {
-        console.log("Behold, the magic!!");
+    function filter(category){
+        let list = [];
+        for (let i=0; i< products.length; i++) {
+            let prod = products[i];
+            if(prod.category === category) {
+                list.push(prod);
+            }
+        }
+
+        setProdsToDisplay(list);
+    }
+
+    function clearFilter() {
+        setProdsToDisplay(products);
     }
     
     return (
         <div className='catalog'>
-            <h1>Check out the Catalog</h1>
-            <h5>We have {products.length} products ready for you!</h5>
+            <h1>Low Depot</h1>
+            {/* <h5>We have {products.length} products ready for you!</h5> */}
 
-            <button onClick={majicTest} className='btn btn-sm btn-dark'>Magic</button>
+            <button onClick={clearFilter} className='btn btn-sm btn-dark btn-filter'>All</button>
+            {categories.map(c => <button onClick={ () => filter(c) } className='btn btn-sm btn-dark btn-filter'>{c}</button>)}
             <br />
 
-            {categories.map(c => <button className='btn btn-sm btn-dark buttons'>{c}</button>)}
-            <br />
-
-            {products.map(p => <Product key={p._id} data={p}></Product> )}
+            {prodsToDisplay.map( p => <Product key={p._id} data={p}></Product> )}
         </div>
     );
 }

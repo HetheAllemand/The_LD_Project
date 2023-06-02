@@ -2,37 +2,37 @@ var catalog = [
     {
         "_id":"1",
         "price": 359.99,
-        "title":"Washing Machine",
+        "title":"Samsungwasher1",
         "image":"washer.jpg",
-        "categorey":"Washers"
+        "category":"Washing Machines"
       },
     {
         "_id":"2",
         "price": 359.99,
-        "title":"Washing Machine",
+        "title":"Samsungwasher2",
         "image":"washer 2.jpg",
-        "categorey":"Washers"
+        "category":"Washing Machines"
       },
     {
         "_id":"3",
         "price": 359.99,
-        "title":"Standard Refridgerator",
+        "title":"Standard Refrigerator",
         "image":"fridgebasic.jpeg",
-        "categorey":"Refrigerators"
+        "category":"Refrigerators"
       },
     {
         "_id":"4",
         "price": 359.99,
         "title":"Refrigerator",
         "image":"Refrigerator.png",
-        "categorey":"Refrigerators"
+        "category":"Refrigerators"
       },
     {
         "_id":"5",
         "price": 359.99,
         "title":"double range",
         "image":"double_range.jpeg",
-        "categorey":"stoves"
+        "category":"Electric Range"
       },   
 ];
 

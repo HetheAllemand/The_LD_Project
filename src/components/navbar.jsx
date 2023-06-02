@@ -24,6 +24,15 @@ function Navbar() {
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button className='btn btn-sm btn-dark' type="submit">Search</button>
               </form>
+              <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Favorites</a>
+              </li>
+              <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Sign In</a>
+              </li>
+              <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Cart</a>
+              </li>
               <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown

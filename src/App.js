@@ -13,7 +13,17 @@ function App() {
 
       
       <Catalog></Catalog>
-      <div>DIY Videos</div>   
+      <br/ >
+    
+      <div className='center-divider'>DIY Videos</div> 
+      <br />  
+      <div className='diyvideos'>
+      <video src="./videos/homegarden.mp4" width="400" height="300" controls="controls" />
+      
+      <video src="./videos/GEElectricRangeInstallation.mp4" width="400" height="300" controls="controls"  />
+      
+      <video src="./videos/pouringslab.mp4" width="400" height="300" controls="controls"  />
+      </div>
     
       <Footer></Footer>
     </div>
