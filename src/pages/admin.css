@@ -1,0 +1,16 @@
+
+
+.admin {
+    background-color: white;
+    min-height: 89vh;
+}
+
+.admin h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.admininfo {
+    display: flex;
+    align-items: space-around;
+}
