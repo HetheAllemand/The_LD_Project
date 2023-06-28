@@ -4,3 +4,13 @@
     background-color: rgb(65, 152, 199);
     margin: 0;
 }
+
+.d-flex {
+    width: 500px;
+    margin-left:300px;
+    margin-right: 200px;
+}
+
+.nav-item-left{
+    max-width: 25%;
+}

@@ -1,5 +1,7 @@
 import "./navbar.css";
 
+import {Link} from 'react-router-dom';
+
 
 function Navbar() {
     return ( 
@@ -11,42 +13,39 @@ function Navbar() {
               </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Shop</a>
+              <li className="nav-item-left">
+              <Link className="nav-link active" aria-current="page" to="./catalog">Shop</Link>
               </li>
-              <li className="nav-item">
-              <a className="nav-link active" href="#">Savings</a>
+              <li className="nav-item-left">
+              <Link className="nav-link active" to="./Notfound">Savings</Link>
               </li>
-              <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">DIY Ideas</a>
+              <li className="nav-item-left">
+              <Link className="nav-link active" aria-current="page" to="./DIYVideos">DIY Ideas</Link>
               </li>
               <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button className='btn btn-sm btn-dark' type="submit">Search</button>
               </form>
-              <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Favorites</a>
+              <li className="nav-item right">
+              <Link className="nav-link active" aria-current="page" to="./Notfound">Favorites</Link>
               </li>
-              <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Sign In</a>
+              <li className="nav-item right">
+              <Link className="nav-link active" aria-current="page" to="./Notfound">Sign In</Link>
               </li>
-              <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Cart</a>
+              <li className="nav-item right">
+              <Link className="nav-link active" aria-current="page" to="./Notfound">Cart</Link>
               </li>
               <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More Info
               </a>
               <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><hr/> className="dropdown-divider"</li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+              <li><Link className="dropdown-item" to="./about">About</Link></li>
+              <li><Link className="dropdown-item" to="./Notfound">Help</Link></li>
+              <li><hr/></li>
+              <li><Link className="dropdown-item" to="./admin">Admin</Link></li>
             </ul>
           </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
-        </li>
       </ul>
     </div>
   </div>
