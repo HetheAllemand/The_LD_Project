@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./adminProducts.css";
+import DataService from "../services/dataService";
 
 function AdminProducts() {
     const [product, setProduct] = useState({});
@@ -15,6 +16,13 @@ function AdminProducts() {
     }
 
     function saveProduct() {
+        let fixedProduct = {...product};
+        fixedProduct.price = parseFloat(fixedProduct.price);
+
+        let service = new DataService();
+        service.saveProduct(fixedProduct);
+
+
         let copy = [...allProducts];
         copy.push(product);
         setAllProducts(copy);
