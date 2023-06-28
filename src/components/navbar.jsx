@@ -22,26 +22,22 @@ function Navbar() {
               <li className="nav-item-left">
               <Link className="nav-link active" aria-current="page" to="./DIYVideos">DIY Ideas</Link>
               </li>
-              <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button className='btn btn-sm btn-dark' type="submit">Search</button>
-              </form>
               <li className="nav-item right">
               <Link className="nav-link active" aria-current="page" to="./Notfound">Favorites</Link>
               </li>
               <li className="nav-item right">
-              <Link className="nav-link active" aria-current="page" to="./Notfound">Sign In</Link>
+              <Link className="nav-link active" aria-current="page" to="./signin">Sign In</Link>
               </li>
               <li className="nav-item right">
               <Link className="nav-link active" aria-current="page" to="./Notfound">Cart</Link>
               </li>
               <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a className="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 More Info
               </a>
               <ul className="dropdown-menu">
               <li><Link className="dropdown-item" to="./about">About</Link></li>
-              <li><Link className="dropdown-item" to="./Notfound">Help</Link></li>
+              <li><Link className="dropdown-item" to="./help">Help</Link></li>
               <li><hr/></li>
               <li><Link className="dropdown-item" to="./admin">Admin</Link></li>
             </ul>

@@ -3,9 +3,10 @@ import './product.css'
 import QuantityPicker from './quantityPicker';
 
 
+
 function Product(props) {
     const [quantity, setQuantity] = useState(1);
-
+    
     useEffect(function(){
         console.log("hello, Im a product!");
     }, []);

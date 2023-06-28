@@ -6,7 +6,7 @@ function About() {
 
     function getEmail() {
         if (visible) {
-            return "LowDepot@gmail.com";
+            return "LowDepot14@gmail.com";
         }
         else {
             return "";
