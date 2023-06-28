@@ -7,7 +7,7 @@ function Breadcrumb (){
         <div className="breadcrumbmain">
         <nav aria-label="breadcrumbmain">
             <ol class="breadcrumb">
-            <li class="breadcrumb-item home"><Link to="./home">Home</Link></li>
+            <li className="breadcrumb-item home"><Link to="./home">Home</Link></li>
             <li class="breadcrumb-item active hours"><Link to="./Notfound">Store Hours</Link></li>
             <li class="breadcrumb-item active credit" aria-current="page"><Link to="./Notfound">Apply For Credit Card</Link></li>
             <li class="breadcrumb-item active orders" aria-current="page"><Link to="./Notfound">Order Status</Link></li>

@@ -7,6 +7,7 @@ function Catalog() {
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
     const [prodsToDisplay, setProdsToDisplay] = useState([]);
+    
 
     useEffect(function(){
         console.log("component loaded");
@@ -42,6 +43,9 @@ function Catalog() {
     return (
         <div className='catalog'>
             <h1>Low Depot</h1>
+            <div id="searchInput_container">
+                <input id="searchInput" type="text"  placeholder='Search here...' />
+            </div>
             {/* <h5>We have {products.length} products ready for you!</h5> */}
 
             <button onClick={clearFilter} className='btn btn-sm btn-dark btn-filter'>All</button>
